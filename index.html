@@ -8,15 +8,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Font Awesome Linked -->
     <script src="https://kit.fontawesome.com/62445b34d6.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts Linked -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- CSS Linked -->
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Flowerly</title>
 </head>
 
-<body>
+<body class="inter">
     <!-- Header Section -->
     <header class="max-w-7xl mx-auto">
         <!-- Navigation Bar -->
-        <nav class="flex">
-            <h1 class="text-5xl">Flowerly</h1>
+        <nav class="flex justify-between items-center">
+            <h1 class="text-5xl noto w-1/2">Flowerly</h1>
             <ul class="flex ">
                 <li><a href="">Home</a></li>
                 <li><a href="">Shop</a></li>
@@ -29,7 +37,7 @@
     <!-- Main Section -->
     <main>
         <!-- Hero Section Section -->
-        <section>
+        <section class="max-w-7xl mx-auto">
             <div>
                 <h1>ALWAYS FRESH <br>FLOWERS</h1>
                 <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
@@ -39,7 +47,7 @@
         </section>
 
         <!-- Service Section -->
-        <section>
+        <section class="max-w-7xl mx-auto">
             <h1>Our Plants</h1>
             <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
                 blooms, we offer a wide variety of fresh.</p>
@@ -59,7 +67,7 @@
         </section>
 
         <!-- Description Section -->
-        <section>
+        <section class="max-w-7xl mx-auto">
             <img src="assets/flower-store.png" alt="Flower Store">
             <div>
                 <h1>Flower & Plants Lover</h1>
@@ -75,29 +83,29 @@
         </section>
 
         <!-- Deals Section -->
-        <section>
+        <section class="max-w-7xl mx-auto">
             <h1>Latest Deals</h1>
             <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
                 blooms, we offer a wide variety of fresh.</p>
 
-            <div>
-                <div>
-                    <h3>60% Off | Bloom Plant</h3>
-                    <a href="">Shop Now</a>
+            <div class="grid grid-cols-2 gap-2 text-white">
+                <div class="bg-[url(assets/deal-bloom.png)] h-48 flex justify-center items-center flex-col">
+                    <h3 class="text-xl noto">25% Off | Zabo Plant</h3>
+                    <a class="underline mt-4" href="">Shop Now</a>
                 </div>
-                <div>
-                    <h3>30% Off | Ana Plant</h3>
-                    <a href="">Shop Now</a>
+                <div class="bg-[url(assets/deal-bloom.png)] h-48 flex justify-center items-center flex-col">
+                    <h3 class="text-xl noto">60% Off | Bloom Plant</h3>
+                    <a class="underline mt-4" href="">Shop Now</a>
                 </div>
-                <div>
-                    <h3>25% Off | Zabo Plant</h3>
-                    <a href="">Shop Now</a>
+                <div class="bg-[url(assets/deal-zabo.png)] h-96 flex justify-center items-center flex-col">
+                    <h3 class="text-4xl noto">30% Off | Ana Plant</h3>
+                    <a class="text-3xl underline mt-4 text-md href="">Shop Now</a>
                 </div>
             </div>
         </section>
 
         <!-- Form Section -->
-        <section>
+        <section class="bg-[url(assets/news-letter-bg.png)] h-96 py-60 bg-cover">
             <h1>Join the colorful Bunch</h1>
             <form action="">
                 <input type="text" name="" id="" placeholder="Write Email">
@@ -107,8 +115,8 @@
     </main>
 
     <!-- Footer Section -->
-    <footer>
-        <div>
+    <footer class="max-w-7xl mx-auto flex justify-between">
+        <div class="w-1/4">
             <h1>Flowerly</h1>
             <p>Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
         </div>
@@ -126,7 +134,7 @@
             <li>Terms of Service</li>
             <li>Help Center</li>
         </ul>
-        <div>
+        <div class="">
             <img src="assets/icon-linkedin.png" alt="linkedin icon">
             <img src="assets/icon-twitter.png" alt="twitter icon">
             <img src="assets/icon-facebook.png" alt="facebook icon">
